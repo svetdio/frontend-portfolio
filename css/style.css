@@ -25,6 +25,7 @@ nav a {
     text-decoration: underline; 
 } */
 
+/* NAVBAR */
 .navbar {
     position: sticky;
     background-color: white;
@@ -109,21 +110,25 @@ nav a {
     display: inline-flexbox ;
 }*/
 
+/* HEADER */
+.home {
+    width: 600vh;
+}
 
 .header h1 {
     font-size: 3.4em;
     margin: 0;
     font-weight: 900;
+    /* width: 700vh; */
 }
 
 .header {
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: center;
     text-align: left;
     padding: 20vh;
-    width: 600vh;
+    width: 70vh;
     height: auto;
     /* padding-top: 20vh; */
 }
@@ -136,12 +141,18 @@ nav a {
     color: #3B82F6;
     white-space: nowrap;
     overflow: hidden;
+    width: 100vh;
 }
 
 .cursor {
     content: "|";
     display: inline-block;
     animation: blink 1s infinite step-start;
+}
+
+.header p {
+    width: 80vh;
+    overflow-wrap: break-word;
 }
 
 .socials {
@@ -192,22 +203,18 @@ nav a {
     60% {transform: translateY(-15px);} 
 }
 
+/* ABOUT ME */
 .about-container {
-    display: flex;
-    background-color: #a0a0a0;
+    /* display: flex; */
+    background-color: #ffffff;
     position: relative;
     width: auto;
-    top: 0vh;
-    margin-top: 100vh;
+    top: 9rem;
     text-justify: auto;
-    padding: 7%;
+    padding: 3%;
     padding-left: 16px; 
     padding-right: 16px; 
-    height: 130vh;
-}
-
-.about-me, .tech {
-    padding-inline: 10%;
+    height: 150vh;
 }
 
 .about-container h2 {
@@ -269,43 +276,39 @@ nav a {
     margin-top: 3vh;
 }
 
-.services {
-    display: block;
-    background-color: #848484;
-    position: relative;
-    width: auto;
-    top: 0vh;
-    margin-top: 10vh;
-    text-justify: auto;
-    padding: 7%;
-    padding-left: 16px; 
-    padding-right: 16px;
-    height: 130vh;
-}
-
-.service {
+.about-me, .tech, .provide {
     padding-inline: 10%;
 }
 
-.provide {
-    padding-left: 16px; 
-    padding-right: 16px; 
+/* SERVICES */
+.services-container {
+    display: block;
+    background-color: #f3f4f6;
+    position: relative;
+    width: auto;
+    top: 0%;
+    /* margin-top: 0vh; */
+    text-justify: auto;
+    padding: 7%;
+    padding-left: 20px; 
+    padding-right: 20px;
+    height: 130vh;
 }
 
-.service h2 {
+.services-container h2 {
     font-size: 3rem; 
     font-weight: bold; 
     text-align: center;
     margin: 0; 
-    padding-left: 0; 
-    padding-right: 0;
+    
 }
 
-.provide h4 {
+.services-container h4 {
     margin-top: 3rem;
     font-size: 1.875rem;
     font-weight: 600;
     color: #3B82F6;
+    padding-left: 16px;
 }
 
 .provide p {
