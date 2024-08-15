@@ -23,21 +23,23 @@
         </div>
         <div class="nav-menu">
             <ul class="nav-list">
-                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-icon">
-                <img src="assets/sun.png" alt="sun icon">
+                <a href="nightmode.html">
+                    <img src="assets/sun.png" alt="sun icon">
+                </a>
             </div>
         </div>
     </nav>
 
     <div>
         <!-- HEADER -->
-        <div class="home-container">
+        <div id="home" class="home-container">
             <div class="header">
                 <div>
                     <h1>Hi, I am Aakash</h1>
@@ -52,12 +54,28 @@
                         at CloudStok Technologies as a Front-End Developer
                     </p>
 
-                    <div class="socials">
-                        <a href="#" class="s1"> <img src="assets/stackoverflow.png"> </a>
-                        <a href="#" class="s2"> <img src="assets/instagram.png"> </a>
-                        <a href="#" class="s3"> <img src="assets/github.png"> </a>
-                        <a href="#" class="s4"> <img src="assets/linkedin.png"> </a>
-                    </div>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://stackoverflow.com/users/11788531/aakash-sharma">
+                                <img src="assets/stackoverflow.png" alt="StackOverflow">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/aakashsh1999/">
+                                <img src="assets/instagram.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/aakashsh1999">
+                                <img src="assets/github.png" alt="GitHub">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aakashsh1999/">
+                                <img src="assets/linkedin.png" alt="LinkedIn">
+                            </a>
+                        </li>
+                    </ul>
                     <button class="resume" type="button">Resume</button>
 
                 </div>
@@ -366,17 +384,14 @@
                     </ul>
                 </div>
             </div>
-
-
-           
         </div>
-        
 
+        <div class="footer-container">
+            Made with 
+            <div class="heart">❤</div>
+            by Aakash Sharma
+        </div>
     </div>
-
-    <!-- <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer> -->
 
     <script src="script.js"></script>
 </body>
