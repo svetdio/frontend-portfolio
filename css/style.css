@@ -1,4 +1,15 @@
-
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
 /* 
 nav {
     position: sticky;
@@ -110,9 +121,21 @@ nav a {
     display: inline-flexbox ;
 }*/
 
-/* HEADER */
-.home {
-    width: 600vh;
+/* HOME */
+.home-container {
+    /* width: 600vh; */
+    height: fit-content;
+    background-image: url("/assets/img1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
 }
 
 .header h1 {
@@ -123,19 +146,15 @@ nav a {
 }
 
 .header {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     text-align: left;
     padding: 20vh;
-    width: 70vh;
+    /* width: 70vh; */
     height: auto;
     /* padding-top: 20vh; */
 }
-
-.header p {
-    font-size: 1.3em;
-} 
 
 .typing {
     color: #3B82F6;
@@ -150,10 +169,11 @@ nav a {
     animation: blink 1s infinite step-start;
 }
 
-.header p {
-    width: 80vh;
-    overflow-wrap: break-word;
+.home-description {
+    display: block;
+    font-size: 1.3em;
 }
+
 
 .socials {
     position: relative;
@@ -190,7 +210,7 @@ nav a {
 
 .dev {
     width: 600px;
-    height: 450px;
+   
     position: absolute;
     right: 8%;
     top: 20%;
@@ -369,7 +389,7 @@ nav a {
     text-justify: auto;
     padding-left: 16px; 
     padding-right: 16px; 
-    height: 160vh;
+    height: fit-content;
 }
 
 /* .project-container {
