@@ -219,8 +219,8 @@ body {
 /* HOME RESPONSIVENESS */
 @media (max-width: 768px) {
     .header {
-        padding: 10vh 5vh;
-        text-align: center;
+        padding: 20vh 2vh;
+        text-align: left;
     }
 
     .header h1 {
@@ -313,6 +313,7 @@ body {
 }
 
 /* ABOUT ME RESPONSIVENESS */
+
 @media (max-width: 768px) {
     .tech-container {
         grid-template-columns: repeat(2, 1fr);  
@@ -388,7 +389,7 @@ body {
     text-align: justify;
 }
 
-/* Responsive Design */
+/*SERVICES RESPONSIVENESS */
 @media (min-width: 768px) {
     .service-container {
         flex-direction: row;
@@ -513,6 +514,19 @@ body {
 
 .show-more-button:hover {
     background-color: #1e40af;
+}
+
+/* PROJECTS RESPONSIVENESSS */
+@media (max-width: 768px) {
+    .cards-wrapper {
+        flex-direction: column;
+        padding-inline: 5%;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 /* CONTACT */
@@ -684,6 +698,23 @@ body {
 
 .social-links img:hover {
     transform: scale(1.2);
+}
+
+/* CONTACT RESPONSIVENESS */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .form-container, .contact-info {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
 }
 
 /* FOOTER */
