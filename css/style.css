@@ -181,8 +181,10 @@ body {
     animation: blink 1s infinite step-start;
 }
 
-.header p {
+.home-desc {
     font-size: 1.3em;
+    word-break: keep-all;
+    width: 80vh;
 }
 
 .resume {
@@ -218,17 +220,20 @@ body {
 
 /* HOME RESPONSIVENESS */
 @media (max-width: 768px) {
+    .home-container {
+        background-position: 10%;
+    }
     .header {
         padding: 20vh 2vh;
         text-align: left;
     }
 
     .header h1 {
-        font-size: 2.5em;
+        font-size: 3.5rem;
     }
 
-    .header p {
-        font-size: 1.1em;
+    .home-desc {
+        font-size: 2rem;
     }
 
     .resume {
@@ -351,13 +356,13 @@ body {
 
 .service-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding-inline: 8%;
 }
 
 .service-card {
-    width: 100%;
+    width: 350px;
     height: 350px;
     background-color: #ffffff;
     border-radius: 0.5rem;
@@ -390,7 +395,7 @@ body {
 }
 
 /*SERVICES RESPONSIVENESS */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .service-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -398,8 +403,12 @@ body {
     }
 
     .service-card {
-        width: 350px;
+        width: 100%;
         margin: 1rem;
+    }
+
+    .about-container h2, .services-container h2, .projects-container h2, .contact-container h2 {
+        font-size: 9rem; 
     }
 }
 
@@ -712,8 +721,9 @@ body {
         margin-top: 16px;
     }
 
-    .social-links {
-        justify-content: center;
+    .social-links img {
+        justify-content: left;
+        width: 60px;
     }
 }
 
