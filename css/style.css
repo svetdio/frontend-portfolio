@@ -90,14 +90,48 @@ body {
     width: 24px;
 }
 
-/* .header {
-    position: relative;
-    text-align: left;
-    margin-left: 150px;
-    width: 490vh;
-    top: 25vh;
-    display: inline-flexbox ;
-}*/
+/* NAVBAR RESPONSIVENESS */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-menu {
+        display: none; /* Initially hide the menu */
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .nav-icon {
+        margin-top: 0;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .nav-icon img {
+        width: 32px; /* Make the icon slightly larger for mobile */
+    }
+}
+
 
 /* HOME */
 .home-container {
@@ -151,22 +185,6 @@ body {
     font-size: 1.3em;
 }
 
-/* .socials {
-    position: relative;
-    justify-content: flex-start; 
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-}
-
-.s1, .s2, .s3, .s4 {
-    cursor: pointer;
-}
-.s1:hover, .s2:hover, .s3:hover, .s4:hover {
-    transform: scale(1.2); 
-
-} */
-
 .resume {
     background-color: rgb(59 130 246);
     padding: 15px 20px;
@@ -197,6 +215,32 @@ body {
     40% {transform: translateY(-30px);} 
     60% {transform: translateY(-15px);} 
 }
+
+/* HOME RESPONSIVENESS */
+@media (max-width: 768px) {
+    .header {
+        padding: 10vh 5vh;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .header p {
+        font-size: 1.1em;
+    }
+
+    .resume {
+        width: 60vw;
+        font-size: 16px;
+    }
+
+    .dev {
+        display: none;
+    }
+}
+
 
 /* ABOUT ME */
 .about-container {
@@ -229,11 +273,13 @@ body {
 }
 
 .tech-container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     /* margin: 5rem; */
-    padding-inline: 10rem;   
+    padding-inline: 10rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  
+    gap: 1rem;
+
 }
 
 .tech-card {
@@ -245,7 +291,7 @@ body {
     border-radius: 0.5rem;
     transition: transform 0.3s;
     cursor: pointer;
-    width: calc(17% - 1rem);
+    width: 100%;
     box-sizing: border-box; 
 }
 
@@ -265,6 +311,20 @@ body {
 .about-me, .tech, .provide, .built, .contact-sub {
     padding-inline: 10%;
 }
+
+/* ABOUT ME RESPONSIVENESS */
+@media (max-width: 768px) {
+    .tech-container {
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 1rem;
+    }
+
+    .tech-card {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
 
 /* SERVICES */
 .services-container {
@@ -349,6 +409,7 @@ body {
     margin: 0;
     
 }
+
 
 /* PROJECTS */
 .projects-container {
