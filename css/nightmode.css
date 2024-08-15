@@ -184,7 +184,7 @@ body {
     background-color: rgb(17 24 39);
     position: relative;
     width: auto;
-    top: 4rem;
+    top: 2rem;
     text-justify: auto;
     padding: 3%;
     padding-left: 16px; 
@@ -212,20 +212,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 2rem;
+    /* margin: 5rem; */
+    padding-inline: 10rem;   
 }
 
 .tech-card {
     display: flex;
     align-items: center;
-    padding-inline: 1rem;
+    padding-inline: .9rem;
     background-color: #ffffff;
-    margin: 1rem;
+    margin: .9rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     cursor: pointer;
-    width: calc(18% - 1rem);
+    width: calc(17% - 1rem);
     box-sizing: border-box; 
 }
 
